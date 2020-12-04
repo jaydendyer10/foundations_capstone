@@ -1,0 +1,265 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 90%;
+  height: 90%;
+  background: #262626;
+  --accent-1: #ffdc1c;
+  --accent-2: #80af28;
+}
+
+#navbar {
+  background: #000;
+  width: 100%;
+  height: 105px;
+  padding: 5px;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#navbar img {
+  width: 20px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+img {
+  width: 165px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.navlinks {
+  display: flex;
+  /* justify-content: space-around; */
+  align-content: center;
+  width: 38%;
+  height: 5px;
+  padding: 20px;
+  height: 0px;
+  float: left;
+  margin-left: 144px;
+  margin-top: 40px;
+}
+
+.navlinks a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.navlinks span {
+  color: #888;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-left: 40px;
+}
+
+.navlinks i {
+  margin-left: 10px;
+  margin-top: -2px;
+  color: #888;
+}
+
+/* #navbar h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #ffdc1c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 30px;
+  margin-top: 35px;
+  font-size: 50px;
+} */
+
+/* h5 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 20px;
+} */
+
+.button {
+  background: #555;
+  border-radius: 3px;
+  width: 120px;
+  height: 35px;
+  padding: 20px;
+  text-align: center;
+  border: none;
+  /* position: relative; */
+  top: 20px;
+  left: 170px;
+  grid-gap: 50px;
+  float: right;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+  float: right;
+  line-height: 200%;
+}
+
+.btntext {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+  text-align: left;
+  line-height: 200%;
+  padding-left: 50px;
+  margin-left: 12px;
+}
+.btntext i {
+  margin-left: 100px;
+  color: var(--accent-2);
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  font-size: 40px;
+}
+
+.btn {
+  background: transparent;
+}
+
+.btn i {
+  color: #888;
+  position: absolute;
+  top: 10px;
+  left: 1300px;
+  font-size: 80px;
+}
+
+#bottom {
+  width: 100%;
+  height: 5%;
+  background: #444;
+  border-bottom: 100px solid #111;
+  padding: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.boxes {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #888;
+  float: left;
+  background: transparent;
+  color: #fff;
+  position: relative;
+  top: -20px;
+  left: -30px;
+  border-left: none;
+}
+
+.boxtext {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  line-height: 400%;
+}
+
+.boxtext span {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+#middle {
+  width: 100%;
+  height: 100%;
+}
+
+.bodytext {
+  width: 36%;
+  height: 40%;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  color: #fff;
+  font-size: 38px;
+  font-weight: 100;
+  padding: 20px;
+  font-style: light;
+}
+
+.bodytext span {
+  font-size: 32px;
+}
+
+.mainbtn {
+  width: 230px;
+  height: 40px;
+  padding: 20px;
+  background: var(--accent-2);
+  position: absolute;
+  top: 500px;
+  left: 70px;
+  border-radius: 3px;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+  line-height: 140%;
+}
+
+.secbtn {
+  width: 200px;
+  height: 40px;
+  padding: 20px;
+  background: #000;
+  position: absolute;
+  top: 500px;
+  left: 380px;
+  border-radius: 2px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 140%;
+  font-weight: 900;
+}
+
+.right {
+  background: url("http://via.placeholder.com/840x560");
+  width: 840px;
+  height: 560px;
+  position: absolute;
+  right: -10px;
+  top: 200px;
+  -webkit-box-shadow: -29px -22px 18px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -29px -22px 18px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: -29px -22px 18px -14px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  top: 165px;
+  right: 570px;
+}
+
+.title span {
+  color: #5bc3eb;
+}
